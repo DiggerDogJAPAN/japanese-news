@@ -1,4 +1,5 @@
-const port = 8000;
+const port = process.env.PORT || 8000;
+// const port = 8000;
 const express = require("express");
 const axios = require("axios");
 const cheerio = require("cheerio");
@@ -8,9 +9,9 @@ const app = express();
 const articles = [];
 
 //top page code
-app.get("/", (req, res) => {
-  res.json(`welcome to japanese news`);
-});
+// app.get("/", (req, res) => {
+//   res.json(`welcome to japanese news`);
+// });
 
 //fetching news article code
 app.get("/news", (req, res) => {
