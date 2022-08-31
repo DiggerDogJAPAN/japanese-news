@@ -13,7 +13,7 @@ const articles = [];
 // });
 
 //fetching news article code
-app.get("/", (req, res) => {
+app.get("/news", (req, res) => {
   axios
     .get("https://japannews.yomiuri.co.jp/society/general-news/")
     .then((response) => {
