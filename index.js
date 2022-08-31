@@ -8,9 +8,9 @@ const app = express();
 const articles = [];
 
 //top page code
-// app.get("/", (req, res) => {
-//   res.json(`welcome to japanese news`);
-// });
+app.get("/", (req, res) => {
+  res.json(`welcome to japanese news`);
+});
 
 //fetching news article code
 app.get("/news", (req, res) => {
